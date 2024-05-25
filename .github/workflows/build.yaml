@@ -9,7 +9,7 @@ on:
       - '!main'     # excludes main
 
 env:
-  IMAGE_NAME: ex3:dev
+  IMAGE_NAME: ex4:dev
 
 jobs:
   build-test-image:
