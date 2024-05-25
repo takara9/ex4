@@ -16,16 +16,21 @@
 
 ### イメージの実行
 
+
+マルチステージで開発したコンテナの実行
 ```
 docker run --name ex4 -d -p 9400:8086 ex4:1.0
-docker run --name ex4-dev -d -p 9410:8086 ex4:dev
 ```
 
-## アクセス
+シングルステージで作ったコンテナの実行
+```
+docker run --name ex4-dev -d -p 9400:8086 ex4:dev
+```
+
+## アクセステスト
 
 ```
 curl http://localhost:9400/ping;echo
-curl http://localhost:9410/ping;echo
 ```
 
 ## コンテナへ入る
